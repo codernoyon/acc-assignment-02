@@ -17,8 +17,9 @@ const tourPackageSchema = mongoose.Schema({
     description: {
         type: String,
         required: [true, "Please provide details about the tour package."]
-    }, // ---> price will be calculate as US Dollar
+    }, 
     price: {
+        // ---> price will be calculate as US Dollar
         type: Number,
         required: true,
         min: [0, "Price can't be negetive"]
