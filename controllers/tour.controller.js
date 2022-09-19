@@ -2,10 +2,29 @@ const { getTourPackagesService, createTourPackageService } = require("../tourPac
 
 exports.getTourPackages = async (req, res) => {
     try {
-        const packages = await getTourPackagesService();
+        
 
-        let filters = {...req.query};
-        console.log(filters);
+        let filters = { ...req.query };
+        // console.log(filters);
+
+
+        //sort , page , limit -> exclude
+        const excludeFields = ['sort', 'page', 'limit', ];
+        excludeFields.forEach(field => delete filters[field]);
+
+        const queries = {}
+
+        if(req.query.sort){
+            const sortBy = req.query.sort.split(',').join(' ');
+            queries.sortBy = sortBy;
+        }
+
+        if(req.query.fields){
+            const fields = req.query.fields.split(',').join(' ');
+            queries.fields = fields;
+        }
+
+        const packages = await getTourPackagesService(filters, queries);
 
         res.status(200).json({
             status: 'success',
@@ -39,4 +58,4 @@ exports.createTourPackage = async (req, res) => {
             error: error.message,
         });
     }
-}
+};

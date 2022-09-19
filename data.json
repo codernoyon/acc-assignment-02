@@ -1,0 +1,87 @@
+[
+    {
+        "name": "Thiland Surpsie",
+        "img": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
+        "description": "Book this full-day tour of Sonargaon and Mainamati to get to know the",
+        "price": 180,
+        "destinations": [
+            "Pataya",
+            "Bankok"
+        ],
+        "transPortation": "airbus",
+        "tourPackageType": "Beach package palace",
+        "meals": [
+            "English Breakfast"
+        ],
+        "availableSeat": 100,
+        "status": "available"
+    },
+    {
+        "name": "Dhaka full-day",
+        "img": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
+        "description": "Book this full-day tour of Sonargaon and Mainamati to get to know the",
+        "price": 100,
+        "destinations": [
+            "Sonargaon",
+            "Mainamati"
+        ],
+        "transPortation": "bus",
+        "tourPackageType": "Historial palace",
+        "meals": [
+            "Bangla Breakfast"
+        ],
+        "availableSeat": 60,
+        "status": "available"
+    },
+    {
+        "name": "Dhaka Half-day",
+        "img": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
+        "description": "Book this full-day tour of Sonargaon and Mainamati to get to know the",
+        "price": 50,
+        "destinations": [
+            "Sonargaon",
+            "Mainamati"
+        ],
+        "transPortation": "bus",
+        "tourPackageType": "Historial palace",
+        "meals": [
+            "Bangla Breakfast"
+        ],
+        "availableSeat": 0,
+        "status": "unavailable"
+    },
+    {
+        "name": "Cox's Bazar",
+        "img": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
+        "description": "Book this full-day tour of Sonargaon and Mainamati to get to know the",
+        "price": 100,
+        "destinations": [
+            "Sea beach",
+            "Senmartin"
+        ],
+        "transPortation": "bus",
+        "tourPackageType": "Sea Beach Adventer",
+        "meals": [
+            "Sea Food Breakfast"
+        ],
+        "availableSeat": 120,
+        "status": "available"
+    },
+    {
+        "name": "SonarGoan",
+        "img": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
+        "description": "Book this full-day tour of Sonargaon and Mainamati to get to know the",
+        "price": 100,
+        "destinations": [
+            "Sonargaon",
+            "Panam Nogar"
+        ],
+        "transPortation": "bus",
+        "tourPackageType": "Historial palace",
+        "meals": [
+            "Sea Food Breakfast"
+        ],
+        "availableSeat": 0,
+        "status": "unavailable"
+    }
+]
