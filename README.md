@@ -4,6 +4,34 @@
 
 
 
+```
+   1. Get a all Tours: GET /tours
+   2. Creat a Tour: POST /tours/
+   3. Get a single Tour: GET /tours/:id
+   4. Update a user: PATCH /tour/:id
+   5. Get Top 3 Trending Tours: GET /tour/trending
+   6. Get Top 3 Cheapest Tours: GET /tour/cheapest
+```
+
+Create a Tour JSON Data Example:
+
+```
+{
+	"name": "Moldives",
+	"image": "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/09/24/146502.jpg",
+	"description": "While the Maldives is usually considered ‘the trip of a lifetime’ that comes with a hefty price tag, the increasing number of resorts across the island country offers something for all budgets and tastes",
+	"price": 250,
+	"destinations": ["Moldives ", "Boat Journey"],
+	"transPortation": "airbus",
+	"tourPackageType": "Travel and Adventure",
+	"meals": ["Complementary food"],
+	"availableSeat": 55,
+	"status": "unavailable"
+	
+}
+```
+
+
 ## Technologies used in this project
 
 - NodeJS
