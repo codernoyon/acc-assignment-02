@@ -1,5 +1,13 @@
-const { getTourPackagesService, createTourPackageService } = require("../tourPackageServices/tourpackageservice");
+const {
+    getTourPackagesService,
+    createTourPackageService,
+    getSinglePackageTourService,
+    getTrendingTourPackageService,
+    getCheapestTourPackesService,
+    updateTourPackageService
+} = require("../tourPackageServices/tourpackageservice");
 
+// get all package
 exports.getTourPackages = async (req, res) => {
     try {
 
@@ -32,7 +40,7 @@ exports.getTourPackages = async (req, res) => {
         }
 
         let filterdString = JSON.stringify(filters);
-        filterdString = filterdString.replace(/\b(gt|gte|lt|lte|all|eq)\b/g, (match) => `$${match}`);
+        filterdString = filterdString.replace(/\b(gt|gte|lt|lte|all|eq|in)\b/g, (match) => `$${match}`);
 
         filters = JSON.parse(filterdString);
 
@@ -52,7 +60,7 @@ exports.getTourPackages = async (req, res) => {
     }
 };
 
-
+//  create a package
 exports.createTourPackage = async (req, res) => {
     try {
         const result = await createTourPackageService(req.body);
@@ -71,3 +79,71 @@ exports.createTourPackage = async (req, res) => {
         });
     }
 };
+
+// get single package
+exports.getTourPackage = async (req, res) => {
+    try {
+        const result = await getSinglePackageTourService(req.params.id);
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(400).json({
+            status: "fail",
+            message: "Can't get the data",
+            error: error.message,
+        });
+    }
+};
+
+
+// get trending packages
+exports.getTrendingTourPackages = async (req, res) => {
+    try {
+        const result = await getTrendingTourPackageService();
+        res.status(200).json({
+            status: 'success',
+            data: result
+        });
+    } catch (error) {
+        res.status(400).json({
+            status: "fail",
+            message: "Can't get the data",
+            error: error.message,
+        });
+    }
+};
+
+
+// get cheapest packages
+exports.getCheapestTourPackages = async (req, res) => {
+    try {
+        const result = await getCheapestTourPackesService();
+        res.status(200).json({
+            status: 'success',
+            data: result
+        })
+    } catch (error) {
+        res.status(400).json({
+            status: "fail",
+            message: "Can't get the data",
+            error: error.message,
+        });
+    }
+}
+
+// update sing package 
+exports.updateTourPackage = async (req, res) => {
+    try {
+        const result = await updateTourPackageService(req.params.id, req.body)
+        res.status(200).json({
+            status: 'success',
+            message: 'Successfully updated the package',
+            data: result
+        })
+    } catch (error) {
+        res.status(400).json({
+            status: "fail",
+            message: "Can't get the data",
+            error: error.message,
+        });
+    }
+}

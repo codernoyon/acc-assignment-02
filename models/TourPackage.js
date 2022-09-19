@@ -17,12 +17,12 @@ const tourPackageSchema = mongoose.Schema({
     description: {
         type: String,
         required: [true, "Please provide details about the tour package."]
-    },
+    }, // ---> price will be calculate as US Dollar
     price: {
         type: Number,
         required: true,
         min: [0, "Price can't be negetive"]
-    }, 
+    },
     destinations: {
         type: Array,
         required: [true, "Privide tour destinations"]
@@ -35,17 +35,17 @@ const tourPackageSchema = mongoose.Schema({
             message: "transPortation can't be {VALUE}"
         }
     },
-    tourPackageType:{
+    tourPackageType: {
         type: String,
         required: true
     },
-    meals:{
+    meals: {
         type: Array,
         required: [true, 'Provie the what are the meals added for this tour package']
     },
     availableSeat: {
         type: Number,
-        required: true, 
+        required: true,
         min: [0, "Seat can't be negetive"]
     },
     status: {
@@ -79,4 +79,4 @@ tourPackageSchema.methods.logger = function () {
 
 const TourPackage = mongoose.model('tourPackage', tourPackageSchema);
 
-module.exports =  TourPackage
+module.exports = TourPackage;
