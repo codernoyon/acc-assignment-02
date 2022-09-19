@@ -21,7 +21,7 @@ exports.getTourPackages = async (req, res) => {
 exports.createTourPackage = async (req, res) => {
     try {
         const result = await createTourPackageService(req.body);
-
+        result.logger();
         res.status(200).json({
             status: 'success',
             message: 'Data inserted successfully',

@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
+
 const tourPackageSchema = mongoose.Schema({
     name: {
         type: String,
         required: [true, "Tour name is required"],
         trim: true,
-        unique: [true, "Name must be qnique"],
+        unique: [true, "Name must be unique"],
         minLength: [3, "Name must be at least 3 character"],
         maxLength: [100, "Name is too large"]
     },
@@ -56,7 +57,6 @@ const tourPackageSchema = mongoose.Schema({
 
 tourPackageSchema.pre('save', function (next) {
 
-
     if (this.availableSeat === 0) {
         this.status = 'unavailable';
     }
@@ -66,5 +66,12 @@ tourPackageSchema.pre('save', function (next) {
     next();
 });
 
+
+tourPackageSchema.methods.logger = function () {
+    console.log(`Data saved for ${this.name}`);
+};
+
+
 const TourPackage = mongoose.model('tourPackage', tourPackageSchema);
+
 module.exports =  TourPackage

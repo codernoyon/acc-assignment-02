@@ -14,7 +14,7 @@ app.use('/tours', tourRoute);
 
 // testing server route
 app.get('/', (req, res) => {
-    res.json("YAY! Server is Runnig on.")
+    res.json("YAY! Server is Runnig on")
 });
 
 app.all('*', (req, res) => {

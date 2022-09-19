@@ -7,6 +7,6 @@ exports.getTourPackagesService = async () => {
 
 
 exports.createTourPackageService = async (data) => {
-    const result = await TourPackage.create(data);
+    const result = await TourPackage.create(data)
     return result;
 }
