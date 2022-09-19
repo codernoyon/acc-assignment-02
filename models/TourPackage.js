@@ -9,7 +9,7 @@ const tourPackageSchema = mongoose.Schema({
         minLength: [3, "Name must be at least 3 character"],
         maxLength: [100, "Name is too large"]
     },
-    img: {
+    image: {
         type: String,
         required: [true, "Please privide a image url"],
         trim: true,

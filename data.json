@@ -1,7 +1,7 @@
 [
     {
         "name": "Thiland Surpsie",
-        "img": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
+        "image": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
         "description": "Book this full-day tour of Sonargaon and Mainamati to get to know the",
         "price": 180,
         "destinations": [
@@ -18,7 +18,7 @@
     },
     {
         "name": "Dhaka full-day",
-        "img": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
+        "image": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
         "description": "Book this full-day tour of Sonargaon and Mainamati to get to know the",
         "price": 100,
         "destinations": [
@@ -35,7 +35,7 @@
     },
     {
         "name": "Dhaka Half-day",
-        "img": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
+        "image": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
         "description": "Book this full-day tour of Sonargaon and Mainamati to get to know the",
         "price": 50,
         "destinations": [
@@ -52,7 +52,7 @@
     },
     {
         "name": "Cox's Bazar",
-        "img": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
+        "image": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
         "description": "Book this full-day tour of Sonargaon and Mainamati to get to know the",
         "price": 100,
         "destinations": [
@@ -69,7 +69,7 @@
     },
     {
         "name": "SonarGoan",
-        "img": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
+        "image": "https://assets.vogue.in/photos/5ce43c1f9cc0c0f041f9eae9/master/pass/Bangkok-city-guide.jpg",
         "description": "Book this full-day tour of Sonargaon and Mainamati to get to know the",
         "price": 100,
         "destinations": [
@@ -82,6 +82,91 @@
             "Sea Food Breakfast"
         ],
         "availableSeat": 0,
+        "status": "unavailable"
+    },
+    {
+        "name": "Nikli",
+        "image": "https://cosmosgroup.sgp1.cdn.digitaloceanspaces.com/news/details/4273937_Mithamoin-Astagram-all-weather-road.jpg",
+        "description": "United News of Bangladesh Nikli Haor, Mithamoin-Astagram Road Trip: On the Way to Kishoreganj",
+        "price": 80,
+        "destinations": [
+            "Ostogram",
+            "Nikli Hour"
+        ],
+        "transPortation": "bus",
+        "tourPackageType": "Adventure",
+        "meals": [
+            "Firt class"
+        ],
+        "availableSeat": 14,
+        "status": "unavailable"
+    },
+    {
+        "name": "Sajek",
+        "image": "https://thefinancialexpress.com.bd/uploads/1623685867.jpg",
+        "description": "Surrounded by the hills of Mizoram on the east and Tripura on the north, Sajek Valley that once witnessed insurgencies now showcases Bangladesh's cultural diversity engaging people of different ethnicities in developing tourism in the area for their economic benefit and social uplifting.",
+        "price": 130,
+        "destinations": [
+            "Sajek Bally",
+            "Climp up Mountain"
+        ],
+        "transPortation": "bus",
+        "tourPackageType": "Adventure",
+        "meals": [
+            "Complementary"
+        ],
+        "availableSeat": 28,
+        "status": "unavailable"
+    },
+    {
+        "name": "Sundarban",
+        "image": "https://i.natgeofe.com/n/a50f7239-ff6d-4874-9448-25d94d8d1c80/sundarbans-bangladesh_16x9.jpg?w=1200",
+        "description": "From above, the Sundarbans mangrove forest is an impressive labyrinth of colors and textures. The clear blues of the Bay of Bengal run into the murky waters of criss-crossing river systems lined by emerald foliage.",
+        "price": 110,
+        "destinations": [
+            "Sundorban ",
+            "Boat jurney"
+        ],
+        "transPortation": "bus",
+        "tourPackageType": "Adventure",
+        "meals": [
+            "Own food"
+        ],
+        "availableSeat": 32,
+        "status": "unavailable"
+    },
+    {
+        "name": "Kuakata",
+        "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtN7rtnZUzVCNezvc7v6DqyYpIIYN2NG7jqwCfTBV4zM8NTYLllh2B2fsk2daQ2TT8Tja9GKLRt1u3Nch_ojNi-NmbPBy1LmPpRr8wGj-R8qJ4ysx9rGUp3Ej3Wg6PnSwmfPwwrZ9nt2gyWwTEeirx5Da_BOyDSqolXH_ohSBOL7Ec-dU4hRG1umYGlg/s1024/Kuakata,%20Daughter%20of%20the%20Sea.webp",
+        "description": "Bangladesh is a dreamland of bewitching natural beauty and Kuakata, locally known as 'Sagar Kannya' Daughter of the sea, has contributed a lot to her beauty. This rare scenic tourist spot is situated in Latachapli Union under the Kalapara Police Station of Patuakhali district. The length of Kuakata is 30 km and its breadth is 6 km. It is 70 km from Patuakhali district headquarters and 320 km from Dhaka.",
+        "price": 154,
+        "destinations": [
+            "Kuakata ",
+            "Boat Journey"
+        ],
+        "transPortation": "bus",
+        "tourPackageType": "Beach",
+        "meals": [
+            "Complementary food"
+        ],
+        "availableSeat": 54,
+        "status": "unavailable"
+    },
+    {
+        "name": "Jaflong",
+        "image": "https://www.travelmate.com.bd/wp-content/uploads/2019/07/Jaflong-Travel.jpg",
+        "description": "Clouds like fog on the mountain, for the first time, you may not realize. It is so tough to turn your eyes watching the combination of the mountain with the cloud under the blue sky. White Cloud, Blue Sky, High Mountains, Blue Water, what a beautiful sight! Jaflong is such a place like this. We all know, Sylhet is a beautiful place in Bangladesh and Jaflong is one of them.",
+        "price": 105,
+        "destinations": [
+            "Jaflong ",
+            "Boat Journey"
+        ],
+        "transPortation": "bus",
+        "tourPackageType": "Travel",
+        "meals": [
+            "Complementary food"
+        ],
+        "availableSeat": 34,
         "status": "unavailable"
     }
 ]
