@@ -3,6 +3,10 @@ const { getTourPackagesService, createTourPackageService } = require("../tourPac
 exports.getTourPackages = async (req, res) => {
     try {
         const packages = await getTourPackagesService();
+
+        let filters = {...req.query};
+        console.log(filters);
+
         res.status(200).json({
             status: 'success',
             data: packages

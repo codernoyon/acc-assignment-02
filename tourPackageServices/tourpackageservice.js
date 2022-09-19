@@ -2,7 +2,8 @@ const TourPackage = require('../models/TourPackage');
 
 exports.getTourPackagesService = async () => {
     const packges = await TourPackage.find({});
-    return packges;
+    const total = await TourPackage.countDocuments()
+    return {total, packges};
 };
 
 
