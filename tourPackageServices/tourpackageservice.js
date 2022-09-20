@@ -1,7 +1,7 @@
 const TourPackage = require('../models/TourPackage');
 // get all package
 exports.getTourPackagesService = async (filters, queries) => {
-    console.log(queries, filters);
+    // console.log(queries, filters);
     const packges = await TourPackage
         .find(filters)
         .skip(queries.skip)

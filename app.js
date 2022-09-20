@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 });
 
 app.all('*', (req, res) => {
-    res.json("No routee Found!!")
+    res.sendFile(__dirname + '/public//404.html');
 })
 
 

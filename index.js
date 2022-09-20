@@ -16,7 +16,7 @@ mongoose.connect(process.env.DATABASE_ONLINE, {
     // socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
     family: 4 // Use IPv4, skip trying IPv6
 }).then(() => {
-    console.log(`Successfully Database Connected!`.blue.bold);
+    console.log(`Successfully Database Connected! ✔`.blue.bold);
 });
 
 

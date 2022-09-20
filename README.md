@@ -1,10 +1,13 @@
-# Tour manage system
+# Tour Management System
 
 ## The api is hosted on Render, to get the api  [**`Click here`**](https://tourmanagement-system.onrender.com/)
 
 Make sure to test the API with Postman or any other REST client. (Recommended to use Postman)
 
 ---
+
+<img src='./public/tourmanage.png' alt='Screen shot'>
+
 
 ```
    1. Get a all Tours: GET /tours
