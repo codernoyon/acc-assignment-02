@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class=" max-w-6xl mx-auto">
+        <h2 class="bg-orange-400 text-2xl md:text-4xl text-center font-bold py-3 text-white rounded-b">
+            Tour Management System
+        </h2>
+        <p class="my-3 text-2xl font-semibold px-6 lg:px-0">Avaliable Routes</p>
+        <ul class="space-y-3 px-6 lg:px-0">
+            <li class="text-xl bg-slate-200 duration-200 hover:bg-slate-100 py-8 px-5 shadow-sm rounded">
+                <a href="/"><span class="bg-sky-300 text-white px-3 py-1 rounded-md mr-2">GET</span>/home</a>
+            </li>
+            <li class="text-xl bg-slate-200 duration-200 hover:bg-slate-100 py-8 px-5 shadow-sm rounded">
+                <a href="/api/v1/tours"><span class="bg-sky-300 text-white px-3 py-1 rounded-md mr-2">GET</span>/tours</a>
+            </li>
+            <li class="text-xl bg-slate-200 duration-200 hover:bg-slate-100 py-8 px-5 shadow-sm rounded">
+                <a href="/api/v1/tours"><span class="bg-green-300 text-white px-3 py-1 rounded-md mr-2">POST</span>/tours</a>
+            </li>
+            <li class="text-xl bg-slate-200 duration-200 hover:bg-slate-100 py-8 px-5 shadow-sm rounded">
+                <a href="/api/v1/tours/6328f560264cb1a23cde7d8d"><span class="bg-sky-300 text-white px-3 py-1 rounded-md mr-2">GET</span>/tours/id</a>
+            </li>
+            <li class="text-xl bg-slate-200 duration-200 hover:bg-slate-100 py-8 px-5 shadow-sm rounded">
+                <a href="/api/v1/tour/6328f560264cb1a23cde7d84"><span class="bg-yellow-300 text-white px-3 py-1 rounded-md mr-2">PATCH</span>/tour/id</a>
+            </li>
+            <li class="text-xl bg-slate-200 duration-200 hover:bg-slate-100 py-8 px-5 shadow-sm rounded">
+                <a href="/api/v1/tour/trending"><span class="bg-sky-300 text-white px-3 py-1 rounded-md mr-2">GET</span>/tour/trending</a>
+            </li>
+            <li class="text-xl bg-slate-200 duration-200 hover:bg-slate-100 py-8 px-5 shadow-sm rounded">
+                <a href="/api/v1/tour/cheapest"><span class="bg-sky-300 text-white px-3 py-1 rounded-md mr-2">GET</span>/tour/cheapest</a>
+            </li>
+        </ul>
+        
+    </div>
+</body>
+
+</html>

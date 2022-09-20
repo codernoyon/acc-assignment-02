@@ -10,12 +10,12 @@ app.use(express.json());
 
 
 // routes
-app.use('/tours', toursRoute);
-app.use('/tour', toureRoute)
+app.use('/api/v1/tours', toursRoute);
+app.use('/api/v1/tour', toureRoute)
 
 // testing server route
 app.get('/', (req, res) => {
-    res.json("YAY! Server is Runnig on")
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 app.all('*', (req, res) => {
