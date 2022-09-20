@@ -4,7 +4,6 @@
 
 Make sure to test the API with Postman or any other REST client. (Recommended to use Postman)
 
----
 
 <img src='./public/tourmanage.png' alt='Screen shot'>
 
