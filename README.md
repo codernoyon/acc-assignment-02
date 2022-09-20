@@ -21,16 +21,16 @@ Create a Tour JSON Data Example:
 
 ```
 {
-"name": "Moldives",
-"image": "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/09/24/146502.jpg",
-"description": "While the Maldives is usually considered ‘the trip of a lifetime’ that comes with a hefty price tag, the increasing number of resorts across the island country offers something for all budgets and tastes",
-"price": 250,
-"destinations": ["Moldives ", "Boat Journey"],
-"transPortation": "airbus",
-"tourPackageType": "Travel and Adventure",
-"meals": ["Complementary food"],
-"availableSeat": 55,
-"status": "unavailable"
+   "name": "Moldives",
+   "image": "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/09/24/146502.jpg",
+   "description": "While the Maldives is usually considered ‘the trip of a lifetime’ that comes with a hefty price tag, the increasing number of resorts across the island country offers something for all budgets and tastes",
+   "price": 250,
+   "destinations": ["Moldives ", "Boat Journey"],
+   "transPortation": "airbus",
+   "tourPackageType": "Travel and Adventure",
+   "meals": ["Complementary food"],
+   "availableSeat": 55,
+   "status": "unavailable"
 
 }
 ```
